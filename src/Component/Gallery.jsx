@@ -1,4 +1,5 @@
 import React from 'react'
+
 function Photo(props) {
     return (
         <div className="Photo">
@@ -34,18 +35,16 @@ function Gallery() {
         path: "https://fastly.picsum.photos/id/0/5000/3333.jpg?hmac=_j6ghY5fCfSD6tvtcV74zXivkJSPIfR9B8w34XeQmvU"
     }
 
-]
+    ]
 
     return (
-        <>
-            <div className="Gallery Main-Margin /// container">
-                {
-                    gallery.map((item) => (
-                        <Photo imgpath = {item}/>
-                    ))
-                }
-            </div>
-        </>
+        <div className="Gallery Main-Margin /// container">
+            {
+                gallery.map((item) => (
+                    <Photo imgpath={item} />
+                ))
+            }
+        </div>
     )
 }
 
