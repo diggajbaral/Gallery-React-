@@ -1,0 +1,18 @@
+@import 'common';
+@import 'Layout/Header.scss';
+
+.Gallery {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    .Photo {
+        height: 200px;
+        width: 200px;
+        img {
+            max-width: 100%;
+            object-fit: cover;
+        }
+    }
+}
